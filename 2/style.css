@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(255, 223, 163);
+    margin: 0;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputDivDay {
+    width: 400px;
+    height: 150px;
+    background: url("./images/day.gif");
+    background-size: 410px 160px;
+    border-radius: 80px;
+    padding: 5px;
+    box-shadow: -8px -10px 30px 0 #C79B80, 8px 10px 30px 0 #4834799d;
+}
+.inputDivNight {
+    width: 400px;
+    height: 150px;
+    background: url("./images/night.gif");
+    background-size: 410px 160px;
+    border-radius: 80px;
+    padding: 5px;
+    box-shadow: -8px -10px 30px 0 #18A98E, 8px 10px 30px 0 #00020C;
+}
+
+span[class="day"]{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.336);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 3s;
+}
+span[class="night"]{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.336);
+    transition-property: transform;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 3s;
+    transform: translateX(250px);
+}
+
